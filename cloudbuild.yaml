@@ -1,0 +1,8 @@
+steps:
+- name: golang
+  args: ["go","build", "-o","go-app","." ]
+
+artifacts:
+  objects:
+    location: gs://artstore11/https://console.cloud.google.com/storage/browser/artstore11
+    paths: ["./go-app"]
